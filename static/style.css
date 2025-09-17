@@ -1,0 +1,93 @@
+/* ตั้งค่าเต็มหน้าจอ */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* Wrapper แชท */
+.chat-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    height: 90vh;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+}
+
+/* Header */
+.chat-header {
+    background: #4a90e2;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* พื้นที่แชท */
+.chatbox {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ฟองข้อความ */
+.user-message, .bot-message {
+    max-width: 80%;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 15px;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background: #dcf8c6;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.bot-message {
+    background: #eee;
+    align-self: flex-start;
+    text-align: left;
+}
+
+/* ช่องป้อนข้อความ */
+.input-area {
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    background: #fafafa;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    outline: none;
+}
+
+.input-area button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.input-area button:hover {
+    background: #357ABD;
+}
